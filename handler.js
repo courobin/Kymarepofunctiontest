@@ -1,7 +1,5 @@
-const json = require("./test.json");
 module.exports = { 
   main: function (event, context) {
-    console.log(json);
-    return json;
+    return JSON.parse(process.env.testdata);
   }
 }
